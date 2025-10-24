@@ -1,274 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/Aftab-icon.png" />
+
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar bg-light navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Aftab Alam</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Aftab Alam</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Aftab Alam</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Aftab Alam
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#skill"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#project"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
     </nav>
 
     <!-- hero section -->
     <section id="home">
-        <div class="hero">
-            <img src="./assets/bubble-pink.png" alt="pink bubble" loading="lazy" class="pink-bubble">
+      <div class="hero">
+        <img
+          src="./assets/bubble-pink.png"
+          alt="pink bubble"
+          loading="lazy"
+          class="pink-bubble"
+        />
 
-            <h1>Hi, I'm <span>Aftab Alam</span></h1>
-            <h2>Front-end Developer</h2>
+        <h1>Hi, I'm <span>Aftab Alam</span></h1>
+        <h2>Front-end Developer</h2>
 
-            <img src="./assets/bubbles.png" alt="many bubble" loading="lazy" class="many-bubble">
-            <img src="./assets/bubble-blue.png" alt="blue bubble" loading="lazy" class="bubble-right">
+        <img
+          src="./assets/bubbles.png"
+          alt="many bubble"
+          loading="lazy"
+          class="many-bubble"
+        />
+        <img
+          src="./assets/bubble-blue.png"
+          alt="blue bubble"
+          loading="lazy"
+          class="bubble-right"
+        />
 
-            <p>Passionate about creating beautiful, responsive, and user- <br> friendly web experiences with modern technologies and clean <br> code.</p>
+        <p>
+          Passionate about creating beautiful, responsive, and user- <br />
+          friendly web experiences with modern technologies and clean <br />
+          code.
+        </p>
 
-            <button>Get In Touch</button>
+        <button>Get In Touch</button>
 
-            <img src="./assets/bubble-blue.png" alt="blue bubble" loading="lazy" class="blue-bubble">
-
-        </div>
+        <img
+          src="./assets/bubble-blue.png"
+          alt="blue bubble"
+          loading="lazy"
+          class="blue-bubble"
+        />
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="about-section">
-
+      <div class="about-section">
         <h1><span>About Me</span></h1>
 
-        <p>I'm a dedicated Front-end Developer with a passion for creating exceptional digital experiences. With expertise in modern web technologies, I transform ideas into interactive, responsive websites that engage users and drive results.</p>
+        <p>
+          I'm a dedicated Front-end Developer with a passion for creating
+          exceptional digital experiences. With expertise in modern web
+          technologies, I transform ideas into interactive, responsive websites
+          that engage users and drive results.
+        </p>
 
-        <p>My journey in web development started with a curiosity about how websites work, and it has evolved into a deep appreciation for clean code, user experience, and the endless possibilities of the web platform.</p>
+        <p>
+          My journey in web development started with a curiosity about how
+          websites work, and it has evolved into a deep appreciation for clean
+          code, user experience, and the endless possibilities of the web
+          platform.
+        </p>
 
         <div class="about-skill">
-            <div class="project about-box">
-                <h3>50+</h3>
-                <p>Projects Completed</p>
-            </div>
-            <div class="experience about-box">
-                <h3>2+</h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="satisfaction about-box">
-                <h3>100%</h3>
-                <p>Client Satisfaction</p>
-            </div>
+          <div class="project about-box">
+            <h3>10+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="experience about-box">
+            <h3>0</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="satisfaction about-box">
+            <h3>100%</h3>
+            <p>Client Satisfaction</p>
+          </div>
         </div>
-        </div>
-
+      </div>
     </section>
 
     <!-- Skills section -->
     <section id="skill">
-            <h1><span>Skills</span></h1>
+      <h1><span>Skills</span></h1>
 
-        <div class="skill-con">
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h3>HTML5</h3>
-                <p>Semantic markup and modern HTML standards</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <h3>CSS3</h3>
-                <p>Advanced styling, animations, and responsive design</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fab fa-js-square"></i>
-                </div>
-                <h3>JavaScript</h3>
-                <p>Modern ES6+ features and DOM manipulation</p>
-            </div>
-
-            <div class="skill-card">
-               <div class="skill-icon">
-                    <i class="fab fa-react"></i>
-                </div>
-                <h3>React</h3>
-                <p>Component-based UI development</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fab fa-sass"></i>
-                </div>
-                <h3>Sass</h3>
-                <p>Advanced CSS preprocessing</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Responsive</h3>
-                <p>Mobile-first approach and cross-browser compatibility</p>
-            </div>
+      <div class="skill-con">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup and modern HTML standards</p>
         </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Advanced styling, animations, and responsive design</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Modern ES6+ features and DOM manipulation</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <h3>Bootstrap</h3>
+          <p>CSS framework for responsive design</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-node"></i>
+          </div>
+          <h3>Node.js</h3>
+          <p>Node.js for server-side development</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive</h3>
+          <p>Mobile-first approach and cross-browser compatibility</p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
-     <section id="project">
-        <h1><span>Projects</span></h1>
+    <section id="project">
+      <h1><span>Projects</span></h1>
 
-        <div class="project-con">
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="project-content">
-                    <h3>E-Commerce Website</h3>
-                    <p>A fully responsive e-commerce platform built with HTML, CSS, and JavaScript featuring product catalog, shopping cart, and checkout functionality.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
+      <div class="project-con">
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://aftabalam999.github.io/Food-Restuarent/">
+              <!-- <i class="fas fa-code"></i> -->
+              <img
+                src="./assets/project/food-restaurent.png"
+                alt="Food restaurant website"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Website</h3>
+            <p>
+              A modern, animated, and fully responsive restaurant website built
+              with HTML, CSS, JavaScript, Bootstrap, and animation libraries.
+              This project simulates a full-featured food business landing page,
+              ideal for showcasing menus, galleries, and contact forms.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
             </div>
+          </div>
+        </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Portfolio Dashboard</h3>
-                    <p>An interactive dashboard with dynamic charts and data visualization, showcasing modern web development techniques and responsive design.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://swiggy-pearl.vercel.app/">
+              <img
+                src="./assets/project/swiggy.png"
+                alt="Swiggy Clone"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Swiggy Clone</h3>
+            <p>
+              A static, responsive restaurant landing page inspired by the Swiggy website. This is a front-end-only prototype built with plain HTML and CSS and a set of image assets . It's intended as a learning/demo project and a starting point for building a production-ready food delivery UI. 
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
             </div>
+          </div>
+        </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Weather App</h3>
-                    <p>A beautiful weather application with real-time data, location-based forecasts, and stunning visual effects using modern CSS animations.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">API</span>
-                        <span class="tech-tag">CSS</span>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://spotify-clone-aftab.vercel.app/">
+              <img
+                src="./assets/project/spotify.png"
+                alt="Spotify Clone"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Spotify Clone</h3>
+            <p>
+              A responsive, visually appealing Spotify Clone built using HTML and CSS that mimics the layout and functionality of Spotify's web player UI. This static project replicates key UI components such as the sidebar, music player, library, playlists, and trending sections.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS</span>
             </div>
-        </div> 
-     </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
-     <section id="contact">
-        <h1><span>Get in touch</span></h1>
-        <div class="contact-con">
-            <div class="contact-left">
-                <h2>Let's work together!</h2>
+    <section id="contact">
+      <h1><span>Get in touch</span></h1>
+      <div class="contact-con">
+        <div class="contact-left">
+          <h2>Let's work together!</h2>
 
-                <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
+          <p>
+            I'm always interested in new opportunities and exciting projects.
+            Whether you have a question or just want to say hi, feel free to
+            reach out.
+          </p>
 
-                <div class="contact-details">
-
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i> <span>aftabalam@gmail.com</span>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i> 
-                            <span>+91 1234567890</span>
-                        </div>
-
-                        <div class="contact-item"> 
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>City - Navgurukul sukkad</span> 
-                        </div>
-                </div>
-
-                <div class="social-icons">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                </div>
-
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i> <span>course.aftabalam@gmail.com</span>
             </div>
 
-            <div class="contact-right">
-                <form action="#" class="message-form">
-                    <label for="username">Your Name</label>
-                    <input type="text" name="user-name" id="userName">
-
-                    <label for="email">Your Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message"></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 9334389625</span>
             </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>City - Navgurukul sukkad</span>
+            </div>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-     </section>
 
-     <footer>
-        <p>© 2025 Designed & Developed by Aftab Alam.</p>
-     </footer>
+        <div class="contact-right">
+          <form action="#" class="message-form">
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="userName" />
+
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Designed & Developed by Aftab Alam.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
